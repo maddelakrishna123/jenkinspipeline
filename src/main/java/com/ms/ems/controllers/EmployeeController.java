@@ -59,7 +59,7 @@ public class EmployeeController {
 	@DeleteMapping("/{id}")
 	@ResponseStatus(HttpStatus.OK)
 	public String deleteEmployee(@PathVariable int id)
-	{
+	{log.info("Entered into delete employee");
 		return service.deleteEmployee(id);
 	}
 	
