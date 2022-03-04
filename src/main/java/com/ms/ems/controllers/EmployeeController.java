@@ -45,6 +45,7 @@ public class EmployeeController {
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Employee createEmp(@RequestBody Employee employee) {
+		log.info("Entered into create employee");
 		return service.createNewEmployee(employee);
 	}
 	@PutMapping
