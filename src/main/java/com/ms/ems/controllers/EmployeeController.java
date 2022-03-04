@@ -39,6 +39,7 @@ public class EmployeeController {
 	@ResponseStatus(HttpStatus.OK)
 	public Employee getEmployee(@PathVariable int id)
 	{
+		log.info("Entered into getEmployee");
 		return service.getEmployee(id);
 	}
 	@PostMapping
